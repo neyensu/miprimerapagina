@@ -1,0 +1,144 @@
+body {
+    background-color: #27292b;
+    background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--BuPz-p40--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nphrgz8yfnjylrwfr0yl.png);
+}
+
+h1 {
+    background-color: #5b606428;
+    color: #e4e4e4;
+    font-size: 50px;
+    font-style: arial;
+    margin: 60px;
+    text-align: center;
+    
+}
+
+p{
+
+    font-size: 18px;
+    font-family: serif;
+    font-style: serif;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 15px;
+        background-color: #5b606428;
+        color: white;
+        }
+    .column {
+        flex: 3;
+        padding: 15px;
+        margin-top: 0;
+    }
+    
+    @media (max-width: 600px) {
+    .column {
+        flex: 100%; 
+    }
+    }
+
+.boton {
+    text-align: center;
+    background-color: #5b606428;
+    border: 2px solid #5b606428;
+    margin: 6em;
+    padding: 5px;
+
+}
+button {
+    background-color: #5b6064af;
+    border: none;
+    margin:auto;
+    color: white;
+    }
+
+form {
+    background-color: #5b606428;
+    padding: 8px;
+    color: white;
+
+}
+input {
+    background-color: #5b606428;
+    border: none;
+
+}
+
+.container-nav {
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    background-color: #5b606428;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.brand {
+    display: flex;
+    align-items: center;
+}
+li>a {
+    padding: 8px 24px;
+}
+li {
+    list-style-type: none;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+.button-menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .column {
+        flex: 100%;
+    }
+    .nav-links {
+        display: none;
+    }
+    .button-menu-toggle {
+        display: block;
+        background-color: rgba(255, 255, 255, 0.589);
+        border: 2px solid black;
+        border-radius: 50%;
+        padding: 0 24px;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .nav-links.nav-links-responsive {
+        position: absolute;
+        display: flex;
+        background-color: #5b606428;
+        width: 100%;
+        height: 100%;
+        top: 70px;
+        left: 0;
+        flex-direction: column;
+        padding-top: 200px;
+        align-items: center;
+        gap: 70px;
+        font-size: 40px;
+    }
+}
+img {
+ display:block;
+ margin:auto;   
+ 
+}
