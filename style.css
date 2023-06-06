@@ -12,7 +12,13 @@ h1 {
     text-align: center;
     
 }
-
+h2 {
+    text-align: center;
+}
+iframe {
+    display:block;
+    margin:auto;
+}
 p{
 
     font-size: 18px;
@@ -25,6 +31,13 @@ p{
     max-width: 800px;
     margin: auto;
     padding: 20px;
+    }
+.titlecenter {
+    align-items: center;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    width: 400px;
     }
     .row {
         display: flex;
@@ -65,6 +78,15 @@ form {
     padding: 8px;
     color: white;
 
+}
+.myForm {
+    align-items: center;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    width: 400px;
+    padding-left: 450px;
+    padding-right: 457px;
 }
 input {
     background-color: #5b606428;
