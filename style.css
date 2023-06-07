@@ -159,11 +159,7 @@ a {
         font-size: 40px;
     }
 }
-img {
- display:block;
- margin:auto;   
- 
-}
+
 
 li:hover {
     color: #cdcdcd;
