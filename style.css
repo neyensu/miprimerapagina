@@ -1,10 +1,10 @@
 body {
-    background-color: #27292b;
-    background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--BuPz-p40--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nphrgz8yfnjylrwfr0yl.png);
+    background-color: #262626;
+   
 }
 
 h1 {
-    background-color: #5b606428;
+    background-color: #191d1da2;
     color: #e4e4e4;
     font-size: 50px;
     font-style: arial;
@@ -43,7 +43,7 @@ p{
         display: flex;
         flex-wrap: wrap;
         margin: 15px;
-        background-color: #5b606428;
+        background-color: #191d1da2;
         color: white;
         }
     .column {
@@ -60,21 +60,21 @@ p{
 
 .boton {
     text-align: center;
-    background-color: #5b606428;
-    border: 2px solid #5b606428;
+    background-color: #191d1da2;
+    border: 2px solid #191d1da2;
     margin: 6em;
     padding: 5px;
 
 }
 button {
-    background-color: #5b6064af;
+    background-color: #191d1da2;
     border: none;
     margin:auto;
     color: white;
     }
 
 form {
-    background-color: #5b606428;
+    background-color: #191d1da2;
     padding: 8px;
     color: white;
 
@@ -89,7 +89,7 @@ form {
     padding-right: 457px;
 }
 input {
-    background-color: #5b606428;
+    background-color: #191d1da2;
     border: none;
 
 }
@@ -98,7 +98,7 @@ input {
     display: flex;
     padding: 10px;
     height: 50px;
-    background-color: #5b606428;
+    background-color: #191d1da2;
 }
 .navbar {
     display: flex;
@@ -147,7 +147,7 @@ a {
     .nav-links.nav-links-responsive {
         position: absolute;
         display: flex;
-        background-color: #5b606428;
+        background-color: #191d1da2;
         width: 100%;
         height: 100%;
         top: 70px;
@@ -163,4 +163,32 @@ img {
  display:block;
  margin:auto;   
  
+}
+
+li:hover {
+    color: #cdcdcd;
+    transition: 0.4s all ease;
+}
+
+li::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #0051ff;
+    transform-origin: tranform 0.5.s ease-out; 
+}
+
+li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+li {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    transition: 0.4s all ease;
 }
