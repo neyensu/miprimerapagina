@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
 body {
     background-color: #262626;
    
@@ -75,6 +76,7 @@ form {
 
 }
 .myForm {
+    position: relative;
     align-items: center;
     display: flex;
     height: 100px;
@@ -103,6 +105,21 @@ input {
 .brand {
     display: flex;
     align-items: center;
+    font-family: Secular One;
+    margin: 6px;
+    margin-bottom: 10px;
+    border-right: 1px solid #fff;
+    animation-name: anim;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim {
+    0% {
+        border-right: 1px solid #fff;
+    }
+    100% {
+        border-right: none;
+    }
 }
 li>a {
     padding: 8px 24px;
@@ -120,7 +137,11 @@ a {
 }
 .button-menu-toggle {
     display: none;
+    font-family: Secular One;
+   
+    
 }
+
 
 @media (max-width: 768px) {
     .column {
@@ -138,9 +159,9 @@ a {
         display: block;
         background-color: rgba(255, 255, 255, 0.589);
         border: 2px solid black;
-        border-radius: 50%;
+        border-radius: 15px;
         padding: 0 24px;
-        font-family: monospace;
+        font-family: none;
         font-weight: bold;
         font-size: 20px;
     }
@@ -250,3 +271,4 @@ button {
         box-shadow: 0 0 32px var(--clr);
         transition: 1s;
     }
+    
