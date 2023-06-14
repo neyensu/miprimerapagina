@@ -56,6 +56,7 @@ p{
     .column {
         flex: 100%; 
     }
+  
     }
 
 .boton {
@@ -64,19 +65,13 @@ p{
     border: 2px solid #191d1da2;
     margin: 6em;
     padding: 5px;
+   
 
 }
-button {
-    background-color: #191d1da2;
-    border: none;
-    margin:auto;
-    color: white;
-    }
 
 form {
     background-color: #191d1da2;
     padding: 8px;
-    color: white;
 
 }
 .myForm {
@@ -131,6 +126,11 @@ a {
     .column {
         flex: 100%;
     }
+
+    .myForm {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
     .nav-links {
         display: none;
     }
@@ -163,7 +163,9 @@ a {
 
 li:hover {
     color: #cdcdcd;
-    transition: 0.4s all ease;
+    box-shadow: 0 0 32px var(--clr);
+    border-top: 1px solid #0051ff;
+    transition: 0.8s;
 }
 
 li::after {
@@ -188,3 +190,63 @@ li {
     cursor: pointer;
     transition: 0.4s all ease;
 }
+.inputAnim {
+    position: relative;
+    width: 250px;
+}
+.inputAnim input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: #191d1da2;
+    border-radius: 5px;  
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+}
+.inputAnim span {
+ position: absolute;
+ left: 0;
+ top: 0px;
+ padding: 10px;
+ pointer-events: none;
+ font-size: 1em;
+ color: rgba(255, 255, 255, 0.25);
+ text-decoration: none;
+ text-transform: uppercase;
+ box-shadow: 0 0 32px none;
+ transition: 0.5s;
+}
+.inputAnim input:valid ~ span,
+.inputAnim input:focus ~ span {
+    color: #0051ff;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+    border-right:1px solid rgba(255, 255, 255, 0.25);
+    background-color: #1f1f1e;
+}
+input:hover {
+    box-shadow: 0 0 32px var(--clr);
+    transition: 0.8s;
+}
+button {
+    background-color: #191d1da2;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    margin:auto;
+    color: white;
+    border-radius: 5px;
+    padding: 6px;
+    transition: 0.5s;
+    }
+    button:hover {
+        background: var(--clr);
+        letter-spacing: 0.25em;
+        background-color: #0051ff ;
+        box-shadow: 0 0 32px var(--clr);
+    }
+    h2:hover {
+        box-shadow: 0 0 32px var(--clr);
+        transition: 1s;
+    }
