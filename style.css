@@ -146,11 +146,7 @@ a {
 @media (max-width: 768px) {
     .column {
         flex: 100%;
-    }
 
-    .myForm {
-        padding-left: 2px;
-        padding-right: 2px;
     }
     .nav-links {
         display: none;
